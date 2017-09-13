@@ -1,0 +1,6 @@
+version: '3'
+services:
+  scrapy:
+    build: .
+    volumes:
+      - "./:/app"
