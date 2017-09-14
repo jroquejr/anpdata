@@ -1,5 +1,6 @@
+# -*- coding: utf-8 -*-
+from __future__ import unicode_literals
 from operator import itemgetter
-
 import scrapy
 from scrapy import FormRequest
 import re
@@ -8,14 +9,9 @@ from collections import OrderedDict
 
 class AnpSpider(scrapy.Spider):
     name = 'anp'
-    allowed_domains = ['anp.gov.br']
-    start_urls = ['http://www.anp.gov.br/preco/prc/Resumo_10_Ultimas_Coletas_Index.asp']
-    ULTIMAS_COLETAS = 'http://www.anp.gov.br/preco/prc/Relatorio_Excel_Ultimas_Coletas_Posto.asp'
-
-    def salvar_arquivo_html(self, response, nome):
-        filename = 'html/{}.html'.format(nome)
-        with open(filename, 'wb') as f:
-            f.write(response.body)
+    allowed_domains = [u'anp.gov.br']
+    start_urls = [u'http://www.anp.gov.br/preco/prc/Resumo_10_Ultimas_Coletas_Index.asp']
+    ULTIMAS_COLETAS = u'http://www.anp.gov.br/preco/prc/Relatorio_Excel_Ultimas_Coletas_Posto.asp'
 
     def parse(self, response):
 

@@ -1,0 +1,13 @@
+setup.py
+frentista/__init__.py
+frentista/items.py
+frentista/middlewares.py
+frentista/pipelines.py
+frentista/settings.py
+frentista/spiders/__init__.py
+frentista/spiders/anp.py
+project.egg-info/PKG-INFO
+project.egg-info/SOURCES.txt
+project.egg-info/dependency_links.txt
+project.egg-info/entry_points.txt
+project.egg-info/top_level.txt
