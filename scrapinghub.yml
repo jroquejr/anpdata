@@ -1,2 +1,3 @@
 image: false
 project: 236059
+stack: scrapy:1.4

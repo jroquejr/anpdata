@@ -1,10 +1,8 @@
 # -*- coding: utf-8 -*-
 from __future__ import unicode_literals
-from operator import itemgetter
 import scrapy
 from scrapy import FormRequest
 import re
-from collections import OrderedDict
 
 
 class AnpSpider(scrapy.Spider):
